@@ -13,7 +13,7 @@ add_executable(main main.cpp solution.cpp)
 # Add the executable for the test program
 add_executable(tests test.cpp solution.cpp)
 
-include_directories($ENV{HOME}/git/personal/cpp/vcpkg/installed/x64-osx/include)
+include_directories($ENV{HOME}/vcpkg/installed/x64-osx/include)
 find_package(GTest CONFIG REQUIRED)
 target_link_libraries(tests PRIVATE GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main)
 
